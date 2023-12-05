@@ -2,13 +2,6 @@
 # Date:		March 20, 2023
 # Description:	A basic, modified version of Advance Wars
 
-# Questions:
-# how to display numbers in hex: syscall
-# how to compare characters with each other: lb
-# do branhces with the same name cause errors: causes erros, different names
-# if the data section has a .word with an integer, do I syscall an integer or string to print: integer syscall
-# what do the s, a, t, and v registers do: use a, s, and t registers for storing 
-
 .data
 
 # characters that need to be compared to
@@ -509,7 +502,7 @@ powerCharge: .word 0
 						addi $t0, $zero, 1
 						j BUwhile1
 						
-				BUbaseerror: # take if above statemnts are false
+				BUbaseerror: # take if above statements are false
 					    
 					      # print BuildUnitBasePromptError
 					     li $v0, 4
